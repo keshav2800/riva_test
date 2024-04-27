@@ -1,0 +1,61 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    /* padding: 40px; */
+}
+
+/* Left column styles */
+.left-column {
+    flex: 1;
+}
+
+/* Right column styles */
+.right-column {
+    flex: 1;
+    padding-left: 40px;
+}
+
+/* Image styles */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section paragraph styles */
+.section-paragraph {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* CTA container styles */
+.cta-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* CTA text styles */
+.cta-text {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* CTA icon styles */
+.cta-icon {
+    width: 12px;
+    height: 10px;
+}

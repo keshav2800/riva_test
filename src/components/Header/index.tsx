@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
@@ -31,17 +32,25 @@ const Header = ({ t }: { t: TFunction }) => {
       });
       setVisibility(false);
     };
+    const handleWinningProductsClick = () => {
+      // Open the external link in a new tab
+      window.open("https://rivaorganicdropship.solutions/winning-product", "_blank");
+      setVisibility(false);
+    };
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+          <Span>{t("About US")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+          <Span>{t("Services")}</Span>
         </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={handleWinningProductsClick}>
+        <Span>{t("Winning Products")}</Span>
+      </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}

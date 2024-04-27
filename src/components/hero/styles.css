@@ -1,0 +1,119 @@
+.outer-container {
+    display: block;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.hero-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.hero-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero-paragraph {
+    font-size: 1rem;
+    color: #666;
+}
+
+.signup-form-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-signup {
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 340px;
+    height: 64px;
+    padding: 20px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 12px 2px rgba(34, 41, 57, .1);
+}
+
+.primary-button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 11px;
+    display: inline-block;
+    background-color: #15803d;
+    font-family: objektiv-mk1, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    transition: all .3s ease-out;
+    width: 170px;
+    height: 64px;
+}
+
+.form-done,
+.form-fail {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.home-hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+/* Container styles */
+.grid-container {
+    margin: 0 auto;
+
+    grid-column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-row-gap: 16px;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+/* Feature styles */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px; */
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-left: -10px;
+    box-sizing: border-box;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Apply a subtle lift effect on hover */
+}
+
+/* Icon styles */
+.feature-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+/* Title styles */
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
