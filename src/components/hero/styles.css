@@ -117,3 +117,65 @@
     font-weight: bold;
     color: #333;
 }
+
+
+@media (min-width: 768px) {
+    /* Adjustments for tablets and larger screens */
+    .hero-container {
+        display: contents;
+    }
+    .hero-heading {
+        font-size: 2rem;
+    }
+    .input-signup {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .primary-button {
+        max-width: 400px;
+    }
+
+    .feature {
+        padding: 30px;
+    }
+
+    .feature-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .feature-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Adjustments for desktop screens */
+    .hero-container {
+        display: contents;
+    }
+    .hero-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .signup-form-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .input-signup {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    /* .input-signup {
+        margin-bottom: 0;
+        margin-right: 10px;
+    } */
+
+    .primary-button {
+        margin-left: 0;
+    }
+}
