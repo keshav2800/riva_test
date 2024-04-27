@@ -59,3 +59,22 @@
     width: 12px;
     height: 10px;
 }
+
+@media (max-width: 768px) {
+    /* Adjust container styles for smaller screens */
+    .container {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust right column styles */
+    .right-column {
+        padding-left: 0; /* Remove left padding for smaller screens */
+        margin-top: 20px; /* Add top margin for spacing */
+    }
+
+    /* Adjust section title styles for smaller screens */
+    .section-title {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+}

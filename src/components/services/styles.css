@@ -97,3 +97,28 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+
+@media (max-width: 768px) {
+    /* Category title styles for smaller screens */
+    .category-title {
+        font-size: 24px; /* Further decrease font size for very small screens */
+    }
+    .partner-list {
+        display: block;
+    }
+    /* Category description styles for smaller screens */
+    .category-description {
+        font-size: 0.8rem; /* Further decrease font size for very small screens */
+    }
+
+    /* Partner item title styles for smaller screens */
+    .partner-item-title {
+        font-size: 0.9rem; /* Decrease font size for smaller screens */
+    }
+
+    /* Partner item description styles for smaller screens */
+    .partner-item-description {
+        font-size: 0.8rem; /* Decrease font size for smaller screens */
+    }
+}
