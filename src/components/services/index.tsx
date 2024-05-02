@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import { withTranslation, TFunction } from "react-i18next";
 import bulkimage from '../../common/images/bulkexport.png';
-import dropshipimage from '../../common/images/dropship.jpeg';
+import dropshipimage from '../../common/images/delivery-bag.png';
 
 const Services = ({ t }: { t: TFunction }) => {
     return (

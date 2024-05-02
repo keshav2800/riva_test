@@ -9,6 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
+    gap: 25px;
 }
 
 .hero-heading {
@@ -31,7 +32,7 @@
     margin-bottom: 10px;
     border: 1px solid transparent;
     border-radius: 8px;
-    width: 340px;
+    width: 300px;
     height: 64px;
     padding: 20px 16px;
     font-size: 16px;
@@ -63,13 +64,50 @@
     color: #333;
 }
 
+
+/* Apply styles to enhance hero image */
 .home-hero-image {
+    width: 100%; /* Ensures image is responsive */
+    max-width: 100%; /* Ensures image doesn't exceed its original size */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Makes sure it's treated as a block element */
+    margin-top: 20px; /* Adds some spacing from the top */
+    border-radius: 10px; /* Optional: Adds rounded corners for a softer look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle drop shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add a 3D tilt effect on hover */
+.home-hero-image:hover {
+    transform: perspective(1000px) rotateY(5deg); /* Tilt the image on the Y-axis */
+}
+
+/* Add animation for more dynamic appearance */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply animation on hover */
+.home-hero-image:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+
+/* .home-hero-image {
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
     margin-top: 20px;
-}
+} */
 /* Container styles */
 .grid-container {
     margin: 0 auto;
@@ -106,8 +144,8 @@
 
 /* Icon styles */
 .feature-icon {
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 10px;
 }
 

@@ -1,6 +1,12 @@
 import React from "react";
 import './styles.css';
 import { withTranslation, TFunction } from "react-i18next";
+import hero from '../../common/images/heroimg.png'
+import rocket from '../../common/images/rocket.png'
+import profit from '../../common/images/investment.png'
+import world from '../../common/images/earth.png'
+import shopping from '../../common/images/online-shopping.png'
+import trophy from '../../common/images/trophy.png'
 
 const Hero = ({ t }: { t: TFunction }) => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -75,8 +81,8 @@ const Hero = ({ t }: { t: TFunction }) => {
     <div className="outer-container">
       <div className="hero-container">
           <div className="hero-content-img">
-              <h1 className="hero-heading">Discover top dropshipping suppliers from organic bharat</h1>
-              <p className="hero-paragraph">Riva Organic, founded in 2022, exports high-quality, naturally processed foods like cane jaggery and millets, promoting health and sustainability.</p>
+              <h1 className="hero-heading">Discover top dropshipping suppliers & exporter from organic bharat</h1>
+              <p className="hero-paragraph">Riva Organic, founded in 2023, exports high-quality, naturally processed products like grocery food and dairy products, eco-friendly products cosmetics and pharma supplements agro tools  and  plants medicine </p>
               <div className="signup-form-content">
                   <form onSubmit={handleSubmit} className="signup-form" aria-label="Email Form">
                       <input className="input-signup" autoFocus={true} maxLength={256} name="email" placeholder="Enter Your email address…" type="email" id="email" required />
@@ -91,28 +97,28 @@ const Hero = ({ t }: { t: TFunction }) => {
               </div>
           </div>
           <div className="hero-content-img">
-              <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/6491bf3d2dbd96fc12770fd6_64419109c2d22e2a9328ab9a_home-hero-img%20(1).webp" alt="Dropshipping trending products" className="home-hero-image" />
+              <img src={hero} alt="Dropshipping trending products" className="home-hero-image" />
           </div>
       </div>
       <div className="grid-container">
         <div className="feature">
-            <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/6491c2ef9b84f99bafeae15e_6256479a3b4937a9f408817c_sell-with-ease-icon.webp" alt="Sell with ease" className="feature-icon" />
+            <img src={world} alt="Sell with ease" className="feature-icon" />
             <h2 className="feature-title">Sell With Ease</h2>
         </div>
         <div className="feature">
-            <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/625647c95265b3e6cd01e539_no-inventory-to-manage.webp" alt="Up-to-date inventory" className="feature-icon" />
+            <img src={shopping} alt="Up-to-date inventory" className="feature-icon" />
             <h2 className="feature-title">Up-to-Date Inventory</h2>
         </div>
         <div className="feature">
-            <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/625647e37a5e47ddd5bf12cf_best-quality-product.webp" alt="Best quality products" className="feature-icon" />
+            <img src={trophy} alt="Best quality products" className="feature-icon" />
             <h2 className="feature-title">Best Quality Products</h2>
         </div>
         <div className="feature">
-            <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/62564811781fd13323eaf709_great-profit-margin.webp" alt="Great profit margin" className="feature-icon" />
+            <img src={profit} alt="Great profit margin" className="feature-icon" />
             <h2 className="feature-title">Great Profit Margin</h2>
         </div>
         <div className="feature">
-            <img src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/6256482e20ff8b3c56992ef6_fastest-delivery.webp" alt="Super-fast delivery" className="feature-icon" />
+            <img src={rocket} alt="Super-fast delivery" className="feature-icon" />
             <h2 className="feature-title">Super-Fast Delivery</h2>
         </div>
       </div> 
