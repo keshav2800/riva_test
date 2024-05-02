@@ -165,6 +165,9 @@
     .hero-heading {
         font-size: 2rem;
     }
+    .hero-content-img {
+        margin-bottom: 20px;
+    }
     .input-signup {
         width: 250px;
         margin-bottom: 20px;
@@ -175,11 +178,12 @@
 
     .feature {
         padding: 30px;
+        margin-bottom: 10px;
     }
 
     .feature-icon {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
 
     .feature-title {
