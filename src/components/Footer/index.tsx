@@ -61,30 +61,41 @@ const Footer = ({ t }: { t: TFunction }) => {
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/">{t("Application Security")}</Large>
-              <Large to="/">{t("Software Principles")}</Large>
+              <Title>{t("Riva Organic")}</Title>
+              <Large to="/">{t("About")}</Large>
+              <Large to="/">{t("Blog")}</Large>
+              <Large to="/">{t("Login")}</Large>
+              <Large to="/">{t("Winning Products")}</Large>
+              <Large to="/">{t("Dropship Suppliers")}</Large>
             </Col>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
+              <Title>{t("Policy")}</Title>
+              <Large to="/">{t("terms and Services")}</Large>
+            </Col> */}
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
+              <Title>{t("Resources")}</Title>
+              <Large to="/">{t("Blog")}</Large>
               <Large to="/">{t("Support Center")}</Large>
-              <Large to="/">{t("Customer Support")}</Large>
+              <Large to="/">{t("Community")}</Large>
+              <Large to="/">{t("Supplier FAQ")}</Large>
+              <Large to="/">{t("Affiliates")}</Large>
+              <Large to="/">{t("Reviews")}</Large>
+              <Large to="/">{t("Web Stories")}</Large>
+              <Large to="/">{t("Statistics")}</Large>
             </Col>
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>Salaiwada, Sawantwadi</Para>
+              <Para>Maharashtra,</Para>
+              <Para>India</Para>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
+              <Title>{t("Riva Organic")}</Title>
               <Large to="/">{t("About")}</Large>
               <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Press")}</Large>
-              <Large to="/">{t("Careers & Culture")}</Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
@@ -106,7 +117,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
@@ -129,22 +140,31 @@ const Footer = ({ t }: { t: TFunction }) => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/"
-                src="github.svg"
+                href="https://www.facebook.com/157588044112352"
+                src="facebook1.svg"
               />
               <SocialLink
-                href="https://twitter.com/"
-                src="twitter.svg"
+                href="https://www.instagram.com/rivaorganic/"
+                src="instagram1.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/"
-                src="linkedin.svg"
+                href="https://www.linkedin.com/in/riva-organic-1315312a4/"
+                src="linkedin1.svg"
               />
               <SocialLink
-                href="https://medium.com/"
-                src="medium.svg"
+                href="https://www.pinterest.com/rivaorganic/"
+                src="pinterest1.svg"
               />
-              <a
+              <SocialLink
+                href="https://www.twitter.com/RivaOrganic"
+                src="twitterx1.svg"
+              />
+              
+              <SocialLink
+                href="https://www.youtube.com/@RivaOrganic/shorts"
+                src="youtube1.svg"
+              />
+              {/* <a
                 href="https://ko-fi.com/Y8Y7H8BNJ"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -155,7 +175,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
                   alt="Buy Me a Coffee at ko-fi.com"
                 />
-              </a>
+              </a> */}
             </FooterContainer>
           </Row>
         </Container>
