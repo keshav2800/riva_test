@@ -68,7 +68,7 @@
 /* Apply styles to enhance hero image */
 .home-hero-image {
     width: 100%; /* Ensures image is responsive */
-    max-width: 100%; /* Ensures image doesn't exceed its original size */
+    max-width: 100%;
     height: auto; /* Maintains aspect ratio */
     display: block; /* Makes sure it's treated as a block element */
     margin-top: 20px; /* Adds some spacing from the top */
