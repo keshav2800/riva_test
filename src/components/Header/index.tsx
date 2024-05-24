@@ -34,7 +34,7 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     const handleWinningProductsClick = () => {
       // Open the external link in a new tab
-      window.open("https://rivaorganicdropship.solutions/winning-product", "_blank");
+      window.open("https://rivaorganic.store/collections/all", "_blank");
       setVisibility(false);
     };
     return (
