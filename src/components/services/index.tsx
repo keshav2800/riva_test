@@ -22,7 +22,7 @@ const Services = ({ t }: { t: TFunction }) => {
             </div>
             <div className="partner-list">
                 <a
-                    href="/"
+                    href="https://pages.razorpay.com/pl_NtRZCUXCBQds41/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="partner-item"
@@ -42,7 +42,7 @@ const Services = ({ t }: { t: TFunction }) => {
                     </div>
                 </a>
                 <a
-                    href="/"
+                    href="https://pages.razorpay.com/pl_NtRZCUXCBQds41/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="partner-item"
