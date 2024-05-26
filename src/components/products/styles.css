@@ -29,6 +29,7 @@
 .section-title {
     font-size: 2rem;
     font-weight: bold;
+    font-family: ProximaNovaSemibold, sans-serif;
     color: #333;
     margin-bottom: 20px;
 }
@@ -36,6 +37,7 @@
 /* Section paragraph styles */
 .section-paragraph {
     font-size: 1rem;
+    font-family: ProximaNovaSemibold, sans-serif;
     color: #666;
     margin-bottom: 20px;
 }
@@ -45,7 +47,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #007bff;
+    color: #15803d;
 }
 
 /* CTA text styles */
@@ -56,8 +58,9 @@
 
 /* CTA icon styles */
 .cta-icon {
-    width: 12px;
-    height: 10px;
+    width: 23px;
+    height: 21px;
+    color: #15803d;
 }
 
 @media (max-width: 768px) {

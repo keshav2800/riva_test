@@ -1,13 +1,16 @@
 import React from 'react';
 import './styles.css';
 import { withTranslation, TFunction } from "react-i18next";
+import coverimg from '../../common/images/product_cover_2.png';
+import arrow from '../../common/images/arrow.png';
+
 
 const ProductSection = ({ t }: { t: TFunction }) => {
     return (
         <div className="container">
             <div className="left-column">
                 <img
-                    src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/625648929107cd4a772b7f60_winning-dropshipping-products.webp"
+                    src={coverimg}
                     alt="Find winning products"
                     className="image"
                 />
@@ -25,7 +28,7 @@ const ProductSection = ({ t }: { t: TFunction }) => {
                 >
                     <div className="cta-text">Get started</div>
                     <img
-                        src="https://assets-global.website-files.com/5b3213161e5234bf1cfff9e1/5f63d91a591fe77c25d54de2_right-arrow.svg"
+                        src={arrow}
                         alt=""
                         className="cta-icon"
                     />

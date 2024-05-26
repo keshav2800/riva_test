@@ -15,10 +15,12 @@
 .hero-heading {
     font-size: 2rem;
     font-weight: bold;
+    font-family: ProximaNovaSemibold, sans-serif;
     color: #333;
 }
 
 .hero-paragraph {
+    font-family: ProximaNovaSemibold, sans-serif;
     font-size: 1rem;
     color: #666;
 }
@@ -55,6 +57,11 @@
     transition: all .3s ease-out;
     width: 170px;
     height: 64px;
+}
+.primary-button:hover {
+    background-color: #1a9f4a; /* Lighter shade of green */
+    transform: scale(1.05); /* Slightly scale up the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 .form-done,
@@ -154,6 +161,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    font-family: ProximaNovaSemibold, sans-serif;
 }
 
 

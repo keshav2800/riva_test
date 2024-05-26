@@ -84,12 +84,14 @@ export const Outline = styled(MenuOutlined)`
 export const Span = styled("span")`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-
+  font-weight: bold;
+  color: #0a0a0fcc;
+  font-family: ProximaNovaSemibold, sans-serif;
   &:hover,
   &:active,
   &:focus {
-    color: #80175A;
+    color: #000000;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: #333;
   }
 `;
