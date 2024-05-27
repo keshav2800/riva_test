@@ -1,0 +1,110 @@
+.testimonial-section {
+    margin-top: 40px;
+    width: 100%;
+    /* background-image: url('data:image/svg+xml,%3Csvg width="1438" height="538" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0.25 0.273499V408.57L1437.75 537.727V129.43L0.25 0.273499Z" fill="%23E7F8F2" stroke="%23A8E2CE" stroke-width="0.2"/%3E%3C/svg%3E%0A'); */
+    /* background-size: cover; */
+    background-color: #ffffff;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .testimonial-heading {
+    font-size: 60px;
+    align-self: stretch;
+    position: relative;
+    font-family: ProximaNovaSemibold, sans-serif;
+    text-align: center;
+    line-height: normal;
+    color-scheme: light;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+  
+  .testimonial-slider {
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    overflow-x: auto;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+  /* .testimonial-slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  } */
+  .slick-slide {
+    flex: 0 0 auto;
+    width: auto !important;
+    margin-right: 40px;
+  }
+  .testimonial-quote {
+    font-size: 20px;
+    font-family: ProximaNovaSemibold, sans-serif;
+    color: #020203;
+    padding-bottom: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .testimonial-image {
+    width: 425px;
+    height: 235px;
+    /* object-fit: cover; */
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Slider animation */
+  /* @keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    animation: slideAnimation 20s linear infinite;
+  } */
+  @media screen and (max-width: 768px) {
+    .testimonial-slider {
+      height: auto;
+    }
+  
+    .slick-slide {
+      margin-right: 20px;
+    }
+  
+    .testimonial-quote {
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+  
+    .testimonial-image {
+      width: 300px;
+      height: 165px;
+    }
+  
+    /* Override Slider Settings */
+    .slick-slider {
+      width: 100%;
+    }
+  
+    .slick-slide {
+      display: block;
+      width: 100%;
+    }
+  }
+  

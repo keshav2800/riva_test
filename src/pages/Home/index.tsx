@@ -15,6 +15,7 @@ const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const Hero = lazy(() => import("../../components/hero"));
 const ProductSection = lazy(() => import("../../components/products"));
 const Services = lazy(() => import("../../components/services"));
+const Testimonials = lazy(() => import("../../components/testimonials"));
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       /> */}
+      <Testimonials />
       <ContentBlock
         direction="left"
         title={AboutContent.title}
