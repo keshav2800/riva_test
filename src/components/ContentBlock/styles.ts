@@ -60,3 +60,26 @@ export const ButtonWrapper = styled("div")`
     margin-left: 20px;
   }
 `;
+export const StyledSvgIcon = styled.div`
+  margin-left: 15px;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  
+  &:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: white;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  perspective: 1000px;
+`;

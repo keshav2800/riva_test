@@ -5,6 +5,7 @@ import { withTranslation } from "react-i18next";
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
+import img from "../../common/images/explore_cover.jpeg";
 import {
   ContentSection,
   Content,
@@ -14,6 +15,8 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  ImageWrapper,
+  StyledSvgIcon
 } from "./styles";
 
 const ContentBlock = ({
@@ -42,8 +45,12 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+           <Col lg={11} md={11} sm={12} xs={24}>
+           <ImageWrapper>
+            <StyledSvgIcon>
+              <SvgIcon src={icon} width="100%" height="100%" />
+            </StyledSvgIcon>
+            </ImageWrapper>
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>

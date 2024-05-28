@@ -6,6 +6,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import hero from "../../components/hero";
+import aboutimg from "../../common/images/explore_cover.jpeg";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -42,14 +43,14 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="explore_cover.jpeg"
         id="about"
       />
       <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="mission_cover.jpeg"
         id="mission"
       />
       <Services />
@@ -57,7 +58,7 @@ const Home = () => {
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="story_cover.jpeg"
         id="product"
       />
       <Contact
