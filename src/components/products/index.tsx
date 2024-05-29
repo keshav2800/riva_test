@@ -21,7 +21,7 @@ const ProductSection = ({ t }: { t: TFunction }) => {
                     Riva Organic allows you to choose the best products to dropship from various categories from dropshipping suppliers all over the world.
                 </p>
                 <a
-                    href="https://rivaorganicdropship.solutions/winning-product"
+                    href="https://rivaorganic.store/collections/all"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-container"
