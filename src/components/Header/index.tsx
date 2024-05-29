@@ -45,7 +45,7 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("sourcing")}>
           <Span>{t("Sourcing")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={handleWinningProductsClick}>
@@ -68,7 +68,7 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="riva_logo.svg" width="101px" height="64px" />
+            <SvgIcon src="logo193.svg" width="100px" height="100px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
