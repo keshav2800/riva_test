@@ -105,10 +105,10 @@ const Services = ({ t }: { t: TFunction }) => {
                                 Riva Organic exports bulk natural and organic products, including spices, herbs, essential oils, and various agricultural goods.
                             </div>
                         </div>
-                        <div className="explore-button">
+                        <a href="https://pages.razorpay.com/pl_NtRZCUXCBQds41/view" className="explore-button">
                             <div className="explore-text">Explore</div>
                             <img className="explore-arrow" alt="rivaorganicRightArrow" src="data:image/svg+xml,%3Csvg width='11' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5833 3.00333C10.7154 2.87124 10.7154 2.65708 10.5833 2.52499L8.43083 0.372475C8.29874 0.240386 8.08458 0.240386 7.95249 0.372475C7.8204 0.504565 7.8204 0.718723 7.95249 0.850812L9.86584 2.76416L7.95249 4.67751C7.8204 4.8096 7.8204 5.02376 7.95249 5.15584C8.08458 5.28793 8.29874 5.28793 8.43083 5.15584L10.5833 3.00333ZM0.861694 3.1024H10.3442V2.42592H0.861694V3.1024Z' fill='%23F5F5F5'/%3E%3C/svg%3E%0A" />
-                        </div>
+                        </a>
                     </div>
                     <div className="source-card">
                         <div className="image-container">
@@ -120,10 +120,10 @@ const Services = ({ t }: { t: TFunction }) => {
                                 Riva Organic is a top dropshipping supplier of natural and organic products for e-commerce businesses in health, wellness, and sustainability.
                             </div>
                         </div>
-                        <div className="explore-button">
+                        <a href="https://pages.razorpay.com/pl_NtRZCUXCBQds41/view" className="explore-button">
                             <div className="explore-text">Explore</div>
                             <img className="explore-arrow" alt="airblackRightArrow" src="data:image/svg+xml,%3Csvg width='11' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5833 3.00333C10.7154 2.87124 10.7154 2.65708 10.5833 2.52499L8.43083 0.372475C8.29874 0.240386 8.08458 0.240386 7.95249 0.372475C7.8204 0.504565 7.8204 0.718723 7.95249 0.850812L9.86584 2.76416L7.95249 4.67751C7.8204 4.8096 7.8204 5.02376 7.95249 5.15584C8.08458 5.28793 8.29874 5.28793 8.43083 5.15584L10.5833 3.00333ZM0.861694 3.1024H10.3442V2.42592H0.861694V3.1024Z' fill='%23F5F5F5'/%3E%3C/svg%3E%0A" />
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

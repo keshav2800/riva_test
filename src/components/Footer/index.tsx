@@ -64,9 +64,8 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Title>{t("Riva Organic")}</Title>
               <Large to="/">{t("About")}</Large>
               <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Login")}</Large>
               <Large to="/">{t("Winning Products")}</Large>
-              <Large to="/">{t("Dropship Suppliers")}</Large>
+              {/* <Large to="/">{t("Dropship Suppliers")}</Large> */}
             </Col>
             {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
@@ -78,10 +77,10 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/">{t("Support Center")}</Large>
               <Large to="/">{t("Community")}</Large>
               <Large to="/">{t("Supplier FAQ")}</Large>
-              <Large to="/">{t("Affiliates")}</Large>
-              <Large to="/">{t("Reviews")}</Large>
-              <Large to="/">{t("Web Stories")}</Large>
-              <Large to="/">{t("Statistics")}</Large>
+              {/* <Large to="/">{t("Affiliates")}</Large> */}
+              {/* <Large to="/">{t("Reviews")}</Large> */}
+              {/* <Large to="/">{t("Web Stories")}</Large> */}
+              {/* <Large to="/">{t("Statistics")}</Large> */}
             </Col>
           </Row>
           <Row justify="space-between">
