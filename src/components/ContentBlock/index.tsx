@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-
+import YouTube from 'react-youtube';
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -20,6 +20,7 @@ import {
 } from "./styles";
 
 const ContentBlock = ({
+  videoId,
   icon,
   title,
   content,
@@ -47,9 +48,9 @@ const ContentBlock = ({
         >
            <Col lg={11} md={11} sm={12} xs={24}>
            <ImageWrapper>
-            <StyledSvgIcon>
-              <SvgIcon src={icon} width="100%" height="100%" />
-            </StyledSvgIcon>
+           <StyledSvgIcon>
+                <SvgIcon src={icon} width="100%" height="100%" />
+              </StyledSvgIcon>
             </ImageWrapper>
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
@@ -88,17 +89,19 @@ const ContentBlock = ({
                           item: {
                             title: string;
                             content: string;
-                            icon: string;
+                            // icon: string;
+                            videoId: string;
                           },
                           id: number
                         ) => {
                           return (
                             <Col key={id} span={11}>
-                              <SvgIcon
+                              <YouTube videoId={item.videoId} opts={{ width: '100%', height: '200px' }} />
+                              {/* <SvgIcon
                                 src={item.icon}
                                 width="60px"
                                 height="60px"
-                              />
+                              /> */}
                               <MinTitle>{t(item.title)}</MinTitle>
                               <MinPara>{t(item.content)}</MinPara>
                             </Col>

@@ -1,16 +1,18 @@
 {
   "title": "Explore Riva Organic",
-  "text": "Dive into Riva Organic's world! Discover their featured products and brand story through captivating visuals and engaging content.",
+  "text": "Explore Riva Organic and get connected with Organic Farming and other Eco-friendly product manufacturers at one stop.",
   "section": [
     {
       "title": "Featured Products:",
       "content": "Explore Riva's finest! Shop their popular organic picks like millets and cane jaggery.",
-      "icon": "notes.svg"
+      "icon": "notes.svg",
+      "videoId": "-mvEdMowGJo"
     },
     {
       "title": "Discover Our Story:",
       "content": "Learn Riva's journey - organic farming, sustainability, and the people who make it happen.",
-      "icon": "notes.svg"
+      "icon": "notes.svg",
+      "videoId": "O_kw7vbxgYI"
     }
   ]
 }
