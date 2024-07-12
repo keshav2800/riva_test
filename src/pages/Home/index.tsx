@@ -43,7 +43,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="explore.png"
+        icon="Explore.png"
         id="about"
       />
       <ContentBlock
