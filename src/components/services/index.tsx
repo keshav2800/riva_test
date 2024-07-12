@@ -72,8 +72,8 @@
 import React from 'react';
 import './styles.css';
 import { withTranslation, TFunction } from "react-i18next";
-import bulkexport from "../../common/images/bulk-export.jpeg";
-import dropshipping from "../../common/images/dropshipping.jpeg";
+import bulkexport from "../../common/images/1.png";
+import dropshipping from "../../common/images/2.png";
 import { Slide } from "react-awesome-reveal";
 
 const Services = ({ t }: { t: TFunction }) => {

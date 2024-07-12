@@ -1,7 +1,13 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
+import { IconWrapper } from './styles';
 import Container from "../../common/Container";
+import visa from "../../common/images/visa.webp";
+import whatsapp from "../../common/images/whatsapp.png";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+// import { FaWhatsapp } from 'react-icons/fa';
+
 
 import i18n from "i18next";
 import {
@@ -13,18 +19,15 @@ import {
   Para,
   Large,
   Chat,
-  Empty,
   FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
 } from "./styles";
 
 interface SocialLinkProps {
   href: string;
   src: string;
 }
+
 
 const Footer = ({ t }: { t: TFunction }) => {
   const handleChange = (language: string) => {
@@ -43,6 +46,11 @@ const Footer = ({ t }: { t: TFunction }) => {
         <SvgIcon src={src} width="25px" height="25px" />
       </a>
     );
+    const iconStyle = {
+      marginRight: '8px', // Adjust margin as needed
+      verticalAlign: 'middle', // Align icons vertically with text
+    };
+  
   };
 
   return (
@@ -50,73 +58,60 @@ const Footer = ({ t }: { t: TFunction }) => {
       <FooterSection>
         <Container>
           <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+            <Col lg={5} md={12} sm={12} xs={24} className="footer-column">
+              <Title>{t("My Account")}</Title>
+              <Large to="/my-account">{t("My Account")}</Large>
+              <Large to="/register">{t("Register")}</Large>
+              <Large to="/login">{t("Login")}</Large>
+              <Large to="/view-order">{t("View Order")}</Large>
+              <Large to="/track-shipment">{t("Track Your Shipment")}</Large>
+              <Title>{t("We Accept")}</Title>
+              <div className="card-images">
+                <img src={visa} alt="Visa" width="170" />
+              </div>
+            </Col>
+
+            <Col lg={5} md={12} sm={12} xs={24} className="footer-column">
+              <Title>{t("Customer Service")}</Title>
+              <Large to="/privacy-policy">{t("Privacy Policy")}</Large>
+              <Large to="/terms-condition">{t("Terms & Condition")}</Large>
+              <Large to="/shipping">{t("Shipping Policy")}</Large>
+              <Large to="/return-and-refund-policy">{t("Return and Refund Policy")}</Large>
+            </Col>
+
+            <Col lg={5} md={12} sm={12} xs={24} className="footer-column">
+              <Title>{t("Information")}</Title>
+              <Large to="/about">{t("About Us")}</Large>
+              <Large to="/contact">{t("Contact Us")}</Large>
+              <Large to="/dropshipping">{t("Drop Shipping")}</Large>
+              <Large to="/ecommerce-product-supplier">{t("E-Commerce Product Supplier")}</Large>
+            </Col>
+
+            <Col lg={5} md={12} sm={12} xs={24} className="footer-column">
+              <Title>{t("Contact Us")}</Title>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+              <IconWrapper>
+                <FaMapMarkerAlt size={16} />
+              </IconWrapper>
+              Salaiwada, Sawantwadi Maharashtra-416510,India
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              <Para>
+              <IconWrapper>
+                <FaPhoneAlt size={16} />
+              </IconWrapper>
+                <a href="tel:+91 9011623566">+91 9011623566</a>
+              </Para>
+              <Para>
+              <IconWrapper>
+                <FaEnvelope size={16} />
+              </IconWrapper>
+                <a href="mailto:rivaorganic2023@gmail.com">rivaorganic2023@gmail.com</a>
+              </Para>
+              <Title>{t("Join Our Community")}</Title>
+              <div className="social-links">
+              <SocialLink href="https://whatsapp.com/channel/" src="whatsapp.svg"/>
+              </div>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Riva Organic")}</Title>
-              <Large to="/">{t("About")}</Large>
-              <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Winning Products")}</Large>
-              {/* <Large to="/">{t("Dropship Suppliers")}</Large> */}
-            </Col>
-            {/* <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/">{t("terms and Services")}</Large>
-            </Col> */}
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Title>{t("Resources")}</Title>
-              <Large to="/">{t("Blog")}</Large>
-              <Large to="/">{t("Support Center")}</Large>
-              <Large to="/">{t("Community")}</Large>
-              <Large to="/">{t("Supplier FAQ")}</Large>
-              {/* <Large to="/">{t("Affiliates")}</Large> */}
-              {/* <Large to="/">{t("Reviews")}</Large> */}
-              {/* <Large to="/">{t("Web Stories")}</Large> */}
-              {/* <Large to="/">{t("Statistics")}</Large> */}
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
-              <Language>{t("Address")}</Language>
-              <Para>Salaiwada, Sawantwadi</Para>
-              <Para>Maharashtra,</Para>
-              <Para>India</Para>
-            </Col>
-            {/* <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Riva Organic")}</Title>
-              <Large to="/">{t("About")}</Large>
-              <Large to="/">{t("Blog")}</Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-            </Col> */}
           </Row>
         </Container>
       </FooterSection>
@@ -158,23 +153,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 href="https://www.twitter.com/RivaOrganic"
                 src="twitterx1.svg"
               />
-              
               <SocialLink
                 href="https://www.youtube.com/@RivaOrganic/shorts"
                 src="youtube1.svg"
               />
-              {/* <a
-                href="https://ko-fi.com/Y8Y7H8BNJ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  height="36"
-                  style={{ border: 0, height: 36 }}
-                  src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
-                  alt="Buy Me a Coffee at ko-fi.com"
-                />
-              </a> */}
             </FooterContainer>
           </Row>
         </Container>

@@ -33,8 +33,7 @@ export const Extra = styled("section")`
   background: rgb(241, 242, 243);
   position: relative;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   padding-bottom: 2rem;
 `;
 
@@ -44,9 +43,10 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
+  margin: auto
   color: #333333;
   font-size: 14px;
-  width: 70%;
+  width: 100%;
 `;
 
 export const Large = styled(Link)`
@@ -167,4 +167,8 @@ export const LanguageSwitchContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   width: 85px;
+`;
+export const IconWrapper = styled.span`
+  margin-right: 8px; /* Adjust margin as needed */
+  vertical-align: middle; /* Align icons vertically with text */
 `;
